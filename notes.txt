@@ -1,3 +1,13 @@
+https://nmap.org/book/mayo-scan.html
+nmap -O -T5 -PE -F --osscan-limit --max-rtt-timeout 100ms --max-parallelism 100 --min-hostgroup 100 -oX mayo2.xml 166.111.0.0/16 > out2.txt
+nmap -O -T5 -PE -F --osscan-limit --max-rtt-timeout 100ms --max-parallelism 100 --min-hostgroup 100 -oX mayo2.xml -iL ip_tables.txt > out2.txt
+
+nmap -O -T5 -PE -F -v --osscan-limit --max-rtt-timeout 100ms --max-parallelism 100 --min-hostgroup 100 -oX "D:\\prog10\\Desktop\\result.xml" -iL "D:\\prog10\\Desktop\\ip_tables.txt"
+
+
+
+
+
 root@kali:~# nmap -T5 -sP -6 2402:f000:1:881::8:200/120
 	Nmap scan report for 2402:f000:1:881::8:205(ipv6.tsinghua.edu.cn)
 	Nmap scan report for 2402:f000:1:881::8:207
@@ -15,4 +25,35 @@ root@kali:~# nmap -T5 -sP -6 2402:f000:1:881::8:300/120
 
 nmap -T5 -sP -6 -v 2402:f000:1:405:166:111:0:0/112
 	Nmap scan report for 2402:f000:1:405:166:111:5:99
+
+nmap -T5 -sP -6  2402:f000:1:405::/112
+	in 65536 only ::1 up. 2000 sec. slower than that 1000 sec.
+
+tuna: 2402:f000:1:416:101:6:6:172
+
+
+1.smallnum:
+	2402:f000:1:881::8:200/120
+2.ipv4:
+	2402:f000:1:405::
+	2402:f000:1:416::
+
+ping 2402:f000:1:405::1 has response
+ping 2402:f000:1:406::1 has response
+ping 2402:f000:1:400::1: response is:
+	2402:f000:1:4ff:0:3:0:1 icmp_seq=2 Time exceeded: Hop limit
+
+hoplimit: 400-402 409-413
+norm: 403-408 414-417 ... waiting for python
+
+
+running:
+1. nmap -T5 -O --osscan-limit -PE -F --max-rtt-timeout 100ms --max-parallelism 100 --min-hostgroup 100 -oX out1.xml -6 2402:f000:1:406:166:111:0:0/112
+2. nmap -T5 -sP -6  2402:f000:1:405:166:111::/112
+
+map -T5 -O --osscan-limit -PE -F --max-rtt-timeout 100ms --max-parallelism 100 --min-hostgroup 100 -oX out1.xml -6 2402:f000:1:406:101:5:0:0/112
+found zero
+
+
+
 

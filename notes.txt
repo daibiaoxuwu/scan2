@@ -1,0 +1,18 @@
+root@kali:~# nmap -T5 -sP -6 2402:f000:1:881::8:200/120
+	Nmap scan report for 2402:f000:1:881::8:205(ipv6.tsinghua.edu.cn)
+	Nmap scan report for 2402:f000:1:881::8:207
+
+root@kali:~# nmap -T5 -sP -6 2402:f000:1:881::8:100/120
+	Nmap scan report for 2402:f000:1:881::8:129
+	Nmap scan report for 2402:f000:1:881::8:153
+Nmap done: 256 IP addresses (2 hosts up) scanned in 2.90 seconds
+
+root@kali:~# nmap -T5 -sP -6 2402:f000:1:881::8:0/120
+none
+
+(nmap -T5 -sP -6 2402:f000:1:881::4:0/120 none)
+root@kali:~# nmap -T5 -sP -6 2402:f000:1:881::8:300/120
+
+nmap -T5 -sP -6 -v 2402:f000:1:405:166:111:0:0/112
+	Nmap scan report for 2402:f000:1:405:166:111:5:99
+

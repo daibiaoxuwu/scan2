@@ -34,6 +34,7 @@ tuna: 2402:f000:1:416:101:6:6:172
 
 1.smallnum:
 	2402:f000:1:881::8:200/120
+	2402:f000:1:405:8100::1/120
 2.ipv4:
 	2402:f000:1:405::
 	2402:f000:1:416::
@@ -62,4 +63,5 @@ Nmap done: 407553 IP addresses (8180 hosts up) scanned in 12967.26 seconds
 discover 2402:f000:1:405:8100::1 in https://mirrors6.tuna.tsinghua.edu.cn/
 and ping 406:8100::1 is valid?
 
+nmap -O -T5 -PE -F -6 --osscan-limit --max-rtt-timeout 100ms --max-parallelism 100 --min-hostgroup 100 -oX "D:\\prog10\\Desktop\\scan2\\result_6.xml" -iL "D:\\prog10\\Desktop\\scan2\\all_ipv6.txt"
 nmap -O -T5 -PE -F -6 --osscan-limit --max-rtt-timeout 100ms --max-parallelism 100 --min-hostgroup 100 -oX "C:\\Users\\d\\Desktop\\scan2\\result_6.xml" -iL "C:\\Users\\d\\Desktop\\scan2\\all_ipv6.txt"

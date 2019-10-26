@@ -1,0 +1,5 @@
+https://nmap.org/book/mayo-scan.html
+nmap -O -T5 -PE -F --osscan-limit --max-rtt-timeout 100ms --max-parallelism 100 --min-hostgroup 100 -oX mayo2.xml 166.111.0.0/16 > out2.txt
+nmap -O -T5 -PE -F --osscan-limit --max-rtt-timeout 100ms --max-parallelism 100 --min-hostgroup 100 -oX mayo2.xml -iL ip_tables.txt > out2.txt
+
+nmap -O -T5 -PE -F -v --osscan-limit --max-rtt-timeout 100ms --max-parallelism 100 --min-hostgroup 100 -oX "D:\\prog10\\Desktop\\result.xml" -iL "D:\\prog10\\Desktop\\ip_tables.txt"

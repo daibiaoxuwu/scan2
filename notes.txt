@@ -56,6 +56,10 @@ found zero
 map -T5 -O --osscan-limit -PE -F --max-rtt-timeout 100ms --max-parallelism 100 --min-hostgroup 100 -oX out1.xml -6 2402:f000:1:406:101:6:0:0/112
 found zero
 
+ipv4all:
+Nmap done: 407553 IP addresses (8180 hosts up) scanned in 12967.26 seconds
 
 
 
+
+nmap -O -T5 -PE -F -6 --osscan-limit --max-rtt-timeout 100ms --max-parallelism 100 --min-hostgroup 100 -oX "C:\\Users\\d\\Desktop\\scan2\\result_6.xml" -iL "C:\\Users\\d\\Desktop\\scan2\\all_ipv6.txt"

@@ -59,7 +59,7 @@ found zero
 ipv4all:
 Nmap done: 407553 IP addresses (8180 hosts up) scanned in 12967.26 seconds
 
-
-
+discover 2402:f000:1:405:8100::1 in https://mirrors6.tuna.tsinghua.edu.cn/
+and ping 406:8100::1 is valid?
 
 nmap -O -T5 -PE -F -6 --osscan-limit --max-rtt-timeout 100ms --max-parallelism 100 --min-hostgroup 100 -oX "C:\\Users\\d\\Desktop\\scan2\\result_6.xml" -iL "C:\\Users\\d\\Desktop\\scan2\\all_ipv6.txt"

@@ -53,6 +53,8 @@ running:
 
 map -T5 -O --osscan-limit -PE -F --max-rtt-timeout 100ms --max-parallelism 100 --min-hostgroup 100 -oX out1.xml -6 2402:f000:1:406:101:5:0:0/112
 found zero
+map -T5 -O --osscan-limit -PE -F --max-rtt-timeout 100ms --max-parallelism 100 --min-hostgroup 100 -oX out1.xml -6 2402:f000:1:406:101:6:0:0/112
+found zero
 
 
 

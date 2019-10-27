@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE nmaprun>
+<?xml-stylesheet href="file:///usr/bin/../share/nmap/nmap.xsl" type="text/xsl"?>
+<!-- Nmap 7.80 scan initiated Sun Oct 27 20:19:18 2019 as: nmap -O -T5 -F -6 -&#45;osscan-limit -&#45;max-rtt-timeout 100ms -&#45;max-parallelism 100 -&#45;min-hostgroup 100 -oX new_ipv6_out.xml -iL new_ipv6.txt -->
+<nmaprun scanner="nmap" args="nmap -O -T5 -F -6 -&#45;osscan-limit -&#45;max-rtt-timeout 100ms -&#45;max-parallelism 100 -&#45;min-hostgroup 100 -oX new_ipv6_out.xml -iL new_ipv6.txt" start="1572207558" startstr="Sun Oct 27 20:19:18 2019" version="7.80" xmloutputversion="1.04">
+<scaninfo type="syn" protocol="tcp" numservices="100" services="7,9,13,21-23,25-26,37,53,79-81,88,106,110-111,113,119,135,139,143-144,179,199,389,427,443-445,465,513-515,543-544,548,554,587,631,646,873,990,993,995,1025-1029,1110,1433,1720,1723,1755,1900,2000-2001,2049,2121,2717,3000,3128,3306,3389,3986,4899,5000,5009,5051,5060,5101,5190,5357,5432,5631,5666,5800,5900,6000-6001,6646,7070,8000,8008-8009,8080-8081,8443,8888,9100,9999-10000,32768,49152-49157"/>
+<verbose level="0"/>
+<debugging level="0"/>
+<runstats><finished time="1572207702" timestr="Sun Oct 27 20:21:42 2019" elapsed="143.98" summary="Nmap done at Sun Oct 27 20:21:42 2019; 8180 IP addresses (0 hosts up) scanned in 143.98 seconds" exit="success"/><hosts up="0" down="8180" total="8180"/>
+</runstats>
+</nmaprun>

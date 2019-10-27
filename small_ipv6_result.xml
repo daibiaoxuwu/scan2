@@ -1,0 +1,120 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE nmaprun>
+<?xml-stylesheet href="file:///usr/bin/../share/nmap/nmap.xsl" type="text/xsl"?>
+<!-- Nmap 7.80 scan initiated Sun Oct 27 01:45:01 2019 as: nmap -O -T5 -PE -F -6 -&#45;osscan-limit -&#45;max-rtt-timeout 100ms -&#45;max-parallelism 100 -&#45;min-hostgroup 100 -oX Desktop/scan2/small_ipv6_result.xml -iL Desktop/scan2/small_ipv6.txt -->
+<nmaprun scanner="nmap" args="nmap -O -T5 -PE -F -6 -&#45;osscan-limit -&#45;max-rtt-timeout 100ms -&#45;max-parallelism 100 -&#45;min-hostgroup 100 -oX Desktop/scan2/small_ipv6_result.xml -iL Desktop/scan2/small_ipv6.txt" start="1572140701" startstr="Sun Oct 27 01:45:01 2019" version="7.80" xmloutputversion="1.04">
+<scaninfo type="syn" protocol="tcp" numservices="100" services="7,9,13,21-23,25-26,37,53,79-81,88,106,110-111,113,119,135,139,143-144,179,199,389,427,443-445,465,513-515,543-544,548,554,587,631,646,873,990,993,995,1025-1029,1110,1433,1720,1723,1755,1900,2000-2001,2049,2121,2717,3000,3128,3306,3389,3986,4899,5000,5009,5051,5060,5101,5190,5357,5432,5631,5666,5800,5900,6000-6001,6646,7070,8000,8008-8009,8080-8081,8443,8888,9100,9999-10000,32768,49152-49157"/>
+<verbose level="0"/>
+<debugging level="0"/>
+<host starttime="1572140727" endtime="1572142062"><status state="up" reason="echo-reply" reason_ttl="62"/>
+<address addr="2402:f000:1:881::8:129" addrtype="ipv6"/>
+<hostnames>
+</hostnames>
+<ports><extraports state="closed" count="97">
+<extrareasons reason="resets" count="97"/>
+</extraports>
+<port protocol="tcp" portid="21"><state state="open" reason="syn-ack" reason_ttl="62"/><service name="ftp" method="table" conf="3"/></port>
+<port protocol="tcp" portid="22"><state state="filtered" reason="no-response" reason_ttl="0"/><service name="ssh" method="table" conf="3"/></port>
+<port protocol="tcp" portid="23"><state state="filtered" reason="no-response" reason_ttl="0"/><service name="telnet" method="table" conf="3"/></port>
+</ports>
+<os><portused state="open" proto="tcp" portid="21"/>
+<portused state="closed" proto="tcp" portid="7"/>
+<portused state="closed" proto="udp" portid="32501"/>
+<osfingerprint fingerprint="OS:SCAN(V=7.80%E=6%D=10/27%OT=21%CT=7%CU=32501%PV=N%DS=3%DC=I%G=Y%TM=5DB4F&#xa;OS:BF3%P=x86_64-pc-linux-gnu)S1(P=600a3874002c063eXX{32}00159882fe71f65f45&#xa;OS:954ba7b012fffff65300000204056401030301{3}080afc8f0c10ff{4}04020000%ST=0&#xa;OS:.101679%RT=0.105491)S2(P=600f94cc002c063eXX{32}001598832810ca4245954ba8&#xa;OS:b012fffff86d00000204056401030301{3}080afc8f0c73ff{4}04020000%ST=0.20196&#xa;OS:6%RT=0.205663)S3(P=600f3a370028063eXX{32}00159884d7fb6b5e45954ba9a012ff&#xa;OS:ffbb0600000204056401030301{3}080afc8f0cd7ff{4}%ST=0.301669%RT=0.305222)&#xa;OS:S4(P=6009a9ee002c063eXX{32}001598856d84818945954baab012fffffae500000204&#xa;OS:056401030301{3}080afc8f0d3cff{4}04020000%ST=0.40167%RT=0.406002)S5(P=60&#xa;OS:08682e002c063eXX{32}00159886653c399345954babb012ffff4abf000002040564010&#xa;OS:30301{3}080afc8f0d9fff{4}04020000%ST=0.501671%RT=0.505467)S6(P=6009b215&#xa;OS:0028063eXX{32}00159887584814b145954baca012ffff90360000020405640101080af&#xa;OS:c8f0e04ff{4}04020000%ST=0.601671%RT=0.606886)U1(P=6000{3}01643a3eXX{32}&#xa;OS:01044f5600{4}600123450134112aXX{32}986f7ef50134631043{300}%ST=0.733502%&#xa;OS:RT=0.737279)TECN(P=60094edf0020063eXX{32}00159888e190047745954bad8012ff&#xa;OS:ff46c90000020405640103030104020000%ST=0.783114%RT=0.787582)T3(P=6009406&#xa;OS:5002c063eXX{32}0015988a47459e3145954bafb012ffff029300000204056401030301&#xa;OS:{3}080afc8f0f1cff{4}04020000%ST=0.882494%RT=0.886176)T4(P=6000{4}14063e&#xa;OS:XX{32}0015988bd22308fb00{4}50040000227a0000%ST=0.932243%RT=0.936016)T5(&#xa;OS:P=6000{4}14063eXX{32}0007988c00{4}45954bb1501400006c4f0000%ST=0.98268%R&#xa;OS:T=0.986884)T6(P=6000{4}14063eXX{32}0007988d47ecc05800{4}50040000f55f000&#xa;OS:0%ST=1.03236%RT=1.03725)T7(P=6000{4}14063eXX{32}0007988e00{4}45954bb250&#xa;OS:1400006c4c0000%ST=1.08214%RT=1.0976)EXTRA(FL=12345)&#xa;"/>
+</os>
+<distance value="3"/>
+<times srtt="33976" rttvar="9004" to="69992"/>
+</host>
+<host starttime="1572140727" endtime="1572142060"><status state="up" reason="echo-reply" reason_ttl="61"/>
+<address addr="2402:f000:1:881::8:153" addrtype="ipv6"/>
+<hostnames>
+</hostnames>
+<ports><extraports state="closed" count="97">
+<extrareasons reason="resets" count="97"/>
+</extraports>
+<port protocol="tcp" portid="80"><state state="open" reason="syn-ack" reason_ttl="61"/><service name="http" method="table" conf="3"/></port>
+<port protocol="tcp" portid="3306"><state state="open" reason="syn-ack" reason_ttl="61"/><service name="mysql" method="table" conf="3"/></port>
+<port protocol="tcp" portid="8081"><state state="open" reason="syn-ack" reason_ttl="61"/><service name="blackice-icecap" method="table" conf="3"/></port>
+</ports>
+<os><portused state="open" proto="tcp" portid="80"/>
+<portused state="closed" proto="tcp" portid="7"/>
+<portused state="closed" proto="udp" portid="34368"/>
+<osfingerprint fingerprint="OS:SCAN(V=7.80%E=6%D=10/27%OT=80%CT=7%CU=34368%PV=N%DS=4%DC=I%G=Y%TM=5DB4F&#xa;OS:BF3%P=x86_64-pc-linux-gnu)S1(P=6000{4}28063dXX{32}005098c4ef23d8f760346&#xa;OS:8b9a012fb04c3ac0000020405640402080abc3d895dff{4}0103030b%ST=0.363746%RT&#xa;OS:=0.36643)S2(P=6000{4}28063dXX{32}005098c5ba4e8741603468baa012fb0449d100&#xa;OS:00020405640402080abc3d89c2ff{4}0103030b%ST=0.46401%RT=0.466295)S3(P=600&#xa;OS:0{4}28063dXX{32}005098c64f256aee603468bba012fb04d3e90000020405640101080&#xa;OS:abc3d8a25ff{4}0103030b%ST=0.563753%RT=0.566142)S4(P=6000{4}28063dXX{32}&#xa;OS:005098c7eb2b7cff603468bca012fb04226a0000020405640402080abc3d8a8aff{4}01&#xa;OS:03030b%ST=0.664039%RT=0.67074)S5(P=6000{4}28063dXX{32}005098c8c1bf57446&#xa;OS:03468bda012fb04712c0000020405640402080abc3d8aedff{4}0103030b%ST=0.76375&#xa;OS:3%RT=0.766533)S6(P=6000{4}24063dXX{32}005098c9562be56a603468be901237c82&#xa;OS:5820000020405640402080abc3d8b52ff{4}%ST=0.863698%RT=0.867984)U1(P=6000{&#xa;OS:3}01643a3dXX{32}01044f2600{4}6001234501341130XX{32}984b864001345bbf43{3&#xa;OS:00}%ST=0.982719%RT=0.985171)TECN(P=6000{4}20063dXX{32}005098ca835ba4036&#xa;OS:03468bf8052fd20cead000002040564010104020103030b%ST=1.03239%RT=1.0367)T4&#xa;OS:(P=6000{4}14063dXX{32}005098cde9a34bc500{4}50040000c7880000%ST=1.1819%R&#xa;OS:T=1.18505)T5(P=6000{4}14063dXX{32}000798ce00{4}603468c35014000034320000&#xa;OS:%ST=1.2321%RT=1.2347)T6(P=6000{4}14063dXX{32}000798cf16504d6e00{4}50040&#xa;OS:000997a0000%ST=1.28228%RT=1.28712)T7(P=6000{4}14063dXX{32}000798d000{4}&#xa;OS:603468c550140000342e0000%ST=1.3326%RT=1.33714)EXTRA(FL=12345)&#xa;"/>
+</os>
+<distance value="4"/>
+<times srtt="22582" rttvar="1106" to="50000"/>
+</host>
+<host starttime="1572140727" endtime="1572142060"><status state="up" reason="echo-reply" reason_ttl="61"/>
+<address addr="2402:f000:1:881::8:205" addrtype="ipv6"/>
+<hostnames>
+</hostnames>
+<ports><extraports state="closed" count="97">
+<extrareasons reason="resets" count="97"/>
+</extraports>
+<port protocol="tcp" portid="22"><state state="open" reason="syn-ack" reason_ttl="61"/><service name="ssh" method="table" conf="3"/></port>
+<port protocol="tcp" portid="80"><state state="open" reason="syn-ack" reason_ttl="61"/><service name="http" method="table" conf="3"/></port>
+<port protocol="tcp" portid="443"><state state="open" reason="syn-ack" reason_ttl="61"/><service name="https" method="table" conf="3"/></port>
+</ports>
+<os><portused state="open" proto="tcp" portid="22"/>
+<portused state="closed" proto="tcp" portid="7"/>
+<portused state="closed" proto="udp" portid="42658"/>
+<osmatch name="Linux 3.13 - 4.6" accuracy="91" line="84">
+<osclass type="general purpose" vendor="Linux" osfamily="Linux" osgen="3.X" accuracy="91"><cpe>cpe:/o:linux:linux_kernel:3</cpe></osclass>
+<osclass type="general purpose" vendor="Linux" osfamily="Linux" osgen="4.X" accuracy="91"><cpe>cpe:/o:linux:linux_kernel:4</cpe></osclass>
+</osmatch>
+</os>
+<distance value="4"/>
+<times srtt="22392" rttvar="1606" to="50000"/>
+</host>
+<host starttime="1572140722" endtime="1572142061"><status state="up" reason="echo-reply" reason_ttl="61"/>
+<address addr="2402:f000:1:881::8:207" addrtype="ipv6"/>
+<hostnames>
+</hostnames>
+<ports><extraports state="filtered" count="99">
+<extrareasons reason="no-responses" count="83"/>
+<extrareasons reason="admin-prohibiteds" count="16"/>
+</extraports>
+<port protocol="tcp" portid="22"><state state="open" reason="syn-ack" reason_ttl="61"/><service name="ssh" method="table" conf="3"/></port>
+</ports>
+<os><portused state="open" proto="tcp" portid="22"/>
+<portused state="closed" proto="udp" portid="30976"/>
+<osfingerprint fingerprint="OS:SCAN(V=7.80%E=6%D=10/27%OT=22%CT=%CU=30976%PV=N%DS=4%DC=I%G=Y%TM=5DB4FB&#xa;OS:F3%P=x86_64-pc-linux-gnu)S1(P=6000{4}28063dXX{32}001698f3e9841708753552&#xa;OS:79a01237c811680000020405640402080a79b00995ff{4}01030307%ST=0.640724%RT=&#xa;OS:0.645455)S2(P=6000{4}28063dXX{32}001698f4822d43957535527aa01237c84bcd00&#xa;OS:00020405640402080a79b009f8ff{4}01030307%ST=0.740727%RT=0.743644)S3(P=60&#xa;OS:00{4}28063dXX{32}001698f57fae97a27535527ba01237c8fcd9000002040564010108&#xa;OS:0a79b00a5cff{4}01030307%ST=0.840676%RT=0.842984)S4(P=6000{4}28063dXX{32&#xa;OS:}001698f6fb3009a87535527ca01237c80beb0000020405640402080a79b00ac0ff{4}0&#xa;OS:1030307%ST=0.940725%RT=0.945076)S5(P=6000{4}28063dXX{32}001698f723e7f5c&#xa;OS:47535527da01237c8f6b00000020405640402080a79b00b25ff{4}01030307%ST=1.040&#xa;OS:73%RT=1.04456)S6(P=6000{4}24063dXX{32}001698f8b06afd197535527e901237c87&#xa;OS:6810000020405640402080a79b00b88ff{4}%ST=1.14073%RT=1.14326)U1(P=6000{3}&#xa;OS:01643a3dXX{32}01014e6e00{4}6001234501341137XX{32}97fd79000134689943{300&#xa;OS:}%ST=1.28235%RT=1.29088)TECN(P=6000{4}20063dXX{32}001698f906a9dab175355&#xa;OS:27f80523840da2c0000020405640101040201030307%ST=1.33266%RT=1.33722)T2(P=&#xa;OS:6000{4}583a3dXX{32}01015a7b00{4}600123450028062bXX{32}98fa00167535527f5&#xa;OS:02e078ea0000080702c000003030a0102040109080aff{4}00{4}0402%ST=1.38285%RT&#xa;OS:=1.38802)T3(P=6000{4}583a3dXX{32}01015a7c00{4}600123450028062aXX{32}98f&#xa;OS:b0016753552800405377ba02b01008bbb000003030a0102040109080aff{4}00{4}0402&#xa;OS:%ST=1.43251%RT=1.44483)T4(P=6000{4}14063dXX{32}001698fc6b15aaa200{4}500&#xa;OS:40000e6900000%ST=1.48249%RT=1.48525)EXTRA(FL=12345)&#xa;"/>
+</os>
+<distance value="4"/>
+<times srtt="8710" rttvar="5773" to="50000"/>
+</host>
+<host starttime="1572141392" endtime="1572142061"><status state="up" reason="echo-reply" reason_ttl="59"/>
+<address addr="2402:f000:1:4ff:0:3:0:1" addrtype="ipv6"/>
+<hostnames>
+</hostnames>
+<ports><extraports state="closed" count="98">
+<extrareasons reason="resets" count="98"/>
+</extraports>
+<port protocol="tcp" portid="22"><state state="open" reason="syn-ack" reason_ttl="250"/><service name="ssh" method="table" conf="3"/></port>
+<port protocol="tcp" portid="5060"><state state="filtered" reason="no-response" reason_ttl="0"/><service name="sip" method="table" conf="3"/></port>
+</ports>
+<os><portused state="open" proto="tcp" portid="22"/>
+<portused state="closed" proto="tcp" portid="7"/>
+<osfingerprint fingerprint="OS:SCAN(V=7.80%E=6%D=10/27%OT=22%CT=7%CU=%PV=N%G=Y%TM=5DB4FBF3%P=x86_64-pc&#xa;OS:-linux-gnu)S1(P=6000{4}2806faXX{32}00169843439897e5a083b172a0122000844b&#xa;OS:000002040400010303000101080a0840c55aff{4}%ST=0.692309%RT=0.704017)S2(P=&#xa;OS:6000{4}2806faXX{32}00169844439991e5a083b173a01220008a480000020404000103&#xa;OS:03000101080a0840c55aff{4}%ST=0.792309%RT=0.795328)S3(P=6000{4}2806faXX{&#xa;OS:32}00169845439b85e5a083b174a01220009643000002040400010303000101080a0840&#xa;OS:c55bff{4}%ST=0.892279%RT=0.897114)S4(P=6000{4}2806faXX{32}00169846439c7&#xa;OS:fe5a083b175a01220009c40000002040400010303000101080a0840c55bff{4}%ST=0.9&#xa;OS:9231%RT=0.995264)S5(P=6000{4}2806faXX{32}00169847439d79e5a083b176a01220&#xa;OS:00a23d000002040400010303000101080a0840c55bff{4}%ST=1.09231%RT=1.09837)S&#xa;OS:6(P=6000{4}2406faXX{32}00169848439e73e5a083b17790122000bc41000002040400&#xa;OS:0101080a0840c55bff{4}%ST=1.19232%RT=1.19529)TECN(P=6000{4}1c06faXX{32}0&#xa;OS:016984943a067e5a083b17870122000bae900000204040001030300%ST=1.38288%RT=1&#xa;OS:.38885)T4(P=6000{4}1406faXX{32}0016984c1b5a592500{4}500420006e060000%ST&#xa;OS:=1.53233%RT=1.53692)T5(P=6000{4}14063bXX{32}0007984d00{4}a083b17c501400&#xa;OS:00b0830000%ST=1.58256%RT=1.58617)T6(P=6000{4}14063bXX{32}0007984e4850cd&#xa;OS:7200{4}50040000eccf0000%ST=1.63191%RT=1.63664)T7(P=6000{4}14063bXX{32}0&#xa;OS:007984f00{4}a083b17d50140000b0800000%ST=1.68196%RT=1.68552)EXTRA(FL=123&#xa;OS:45)&#xa;"/>
+</os>
+<times srtt="19086" rttvar="96" to="50000"/>
+</host>
+<host starttime="1572141390" endtime="1572142060"><status state="up" reason="echo-reply" reason_ttl="60"/>
+<address addr="2402:f000:1:4ff:0:3:0:2" addrtype="ipv6"/>
+<hostnames>
+</hostnames>
+<ports><extraports state="closed" count="98">
+<extrareasons reason="resets" count="98"/>
+</extraports>
+<port protocol="tcp" portid="22"><state state="open" reason="syn-ack" reason_ttl="60"/><service name="ssh" method="table" conf="3"/></port>
+<port protocol="tcp" portid="80"><state state="open" reason="syn-ack" reason_ttl="60"/><service name="http" method="table" conf="3"/></port>
+</ports>
+<os><portused state="open" proto="tcp" portid="22"/>
+<portused state="closed" proto="tcp" portid="7"/>
+<osfingerprint fingerprint="OS:SCAN(V=7.80%E=6%D=10/27%OT=22%CT=7%CU=%PV=N%G=Y%TM=5DB4FBF3%P=x86_64-pc&#xa;OS:-linux-gnu)S1(P=6c00{4}28063cXX{32}001698699b6d66a4c422f387a012fc008e72&#xa;OS:0000020405640103{3}0402080a8731cf69ff{4}%ST=0.796086%RT=0.808028)S2(P=6&#xa;OS:c00{4}28063cXX{32}0016986a805065bfc422f388a012fc00aa140000020405640103{&#xa;OS:3}0402080a8731cfc7ff{4}%ST=0.896085%RT=0.899681)S3(P=6c00{4}28063cXX{32&#xa;OS:}0016986b13a57295c422f389a012fc000f6a0000020402800103{3}0101080a8731d02&#xa;OS:aff{4}%ST=0.996079%RT=0.99943)S4(P=6c00{4}28063cXX{32}0016986cd0192ef5c&#xa;OS:422f38aa012fc0090490000020405640103{3}0402080a8731d08fff{4}%ST=1.09611%&#xa;OS:RT=1.09943)S5(P=6c00{4}28063cXX{32}0016986dce2b67abc422f38ba012fc005c68&#xa;OS:0000020402180103{3}0402080a8731d0f2ff{4}%ST=1.19608%RT=1.19954)S6(P=6c0&#xa;OS:0{4}24063cXX{32}0016986efd33fad6c422f38c9012fc00aee60000020401090402080&#xa;OS:a8731d157ff{4}%ST=1.29612%RT=1.30001)TECN(P=6c00{4}20063cXX{32}0016986f&#xa;OS:fc4e0a78c422f38d8012fc00085f0000020405640103{3}04020000%ST=1.48254%RT=1&#xa;OS:.48873)T3(P=6c00{4}28063cXX{32}00169871086868c4c422f38fa012fc0020960000&#xa;OS:020401090103{3}0402080a8731d276ff{4}%ST=1.58258%RT=1.58671)T4(P=6c00{4}&#xa;OS:14063cXX{32}001698729e9feab300{4}50040000790b0000%ST=1.63192%RT=1.63564&#xa;OS:)T5(P=6000{4}14063cXX{32}0007987300{4}c422f391501400004aa80000%ST=1.681&#xa;OS:98%RT=1.68685)T6(P=6000{4}14063cXX{32}0007987415831ff300{4}50040000ccf5&#xa;OS:0000%ST=1.7325%RT=1.73633)T7(P=6000{4}14063cXX{32}0007987500{4}c422f392&#xa;OS:501400004aa50000%ST=1.78204%RT=1.78544)EXTRA(FL=12345)&#xa;"/>
+</os>
+<times srtt="22626" rttvar="1333" to="50000"/>
+</host>
+<runstats><finished time="1572142067" timestr="Sun Oct 27 02:07:47 2019" elapsed="1366.22" summary="Nmap done at Sun Oct 27 02:07:47 2019; 133376 IP addresses (6 hosts up) scanned in 1366.22 seconds" exit="success"/><hosts up="6" down="133370" total="133376"/>
+</runstats>
+</nmaprun>

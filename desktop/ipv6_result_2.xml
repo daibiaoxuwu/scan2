@@ -1,0 +1,318 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE nmaprun>
+<?xml-stylesheet href="file:///usr/bin/../share/nmap/nmap.xsl" type="text/xsl"?>
+<!-- Nmap 7.80 scan initiated Sun Oct 27 11:24:52 2019 as: nmap -6 -T5 -O -F -iL Desktop/scan2/all_ipv6.txt -oX ipv6_result_2.xml -&#45;osscan-limit -->
+<nmaprun scanner="nmap" args="nmap -6 -T5 -O -F -iL Desktop/scan2/all_ipv6.txt -oX ipv6_result_2.xml -&#45;osscan-limit" start="1572175492" startstr="Sun Oct 27 11:24:52 2019" version="7.80" xmloutputversion="1.04">
+<scaninfo type="syn" protocol="tcp" numservices="100" services="7,9,13,21-23,25-26,37,53,79-81,88,106,110-111,113,119,135,139,143-144,179,199,389,427,443-445,465,513-515,543-544,548,554,587,631,646,873,990,993,995,1025-1029,1110,1433,1720,1723,1755,1900,2000-2001,2049,2121,2717,3000,3128,3306,3389,3986,4899,5000,5009,5051,5060,5101,5190,5357,5432,5631,5666,5800,5900,6000-6001,6646,7070,8000,8008-8009,8080-8081,8443,8888,9100,9999-10000,32768,49152-49157"/>
+<verbose level="0"/>
+<debugging level="0"/>
+<host starttime="1572177440" endtime="1572179409"><status state="up" reason="echo-reply" reason_ttl="58"/>
+<address addr="2402:f000:1:415:101:6:5:200" addrtype="ipv6"/>
+<hostnames>
+</hostnames>
+<ports><extraports state="filtered" count="95">
+<extrareasons reason="no-responses" count="95"/>
+</extraports>
+<port protocol="tcp" portid="22"><state state="open" reason="syn-ack" reason_ttl="58"/><service name="ssh" method="table" conf="3"/></port>
+<port protocol="tcp" portid="80"><state state="open" reason="syn-ack" reason_ttl="58"/><service name="http" method="table" conf="3"/></port>
+<port protocol="tcp" portid="427"><state state="closed" reason="reset" reason_ttl="58"/><service name="svrloc" method="table" conf="3"/></port>
+<port protocol="tcp" portid="443"><state state="open" reason="syn-ack" reason_ttl="58"/><service name="https" method="table" conf="3"/></port>
+<port protocol="tcp" portid="8000"><state state="open" reason="syn-ack" reason_ttl="58"/><service name="http-alt" method="table" conf="3"/></port>
+</ports>
+<os><portused state="open" proto="tcp" portid="22"/>
+<portused state="closed" proto="tcp" portid="427"/>
+<osmatch name="VMware ESXi 6.0.0" accuracy="99" line="85">
+<osclass type="specialized" vendor="VMware" osfamily="ESXi" osgen="6.X" accuracy="99"><cpe>cpe:/o:vmware:esxi:6.0.0</cpe></osclass>
+</osmatch>
+<osfingerprint fingerprint="OS:SCAN(V=7.80%E=6%D=10/27%OT=22%CT=427%CU=%PV=N%G=Y%TM=5DB58DDF%P=x86_64-&#xa;OS:pc-linux-gnu)S1(P=600dfead0028063aXX{32}0016bc46b4c73518fc58158da012fff&#xa;OS:f181e000002040564010303090402080a0dc15326ff{4}%ST=0.086595%RT=0.090438)&#xa;OS:S2(P=600d8f310028063aXX{32}0016bc47c1e0e94afc58158ea012ffff56c600000204&#xa;OS:0564010303090402080a0dc15330ff{4}%ST=0.186643%RT=0.189272)S3(P=600c5c67&#xa;OS:0028063aXX{32}0016bc48cf0b9062fc58158fa012ffffa85c000002040280010303090&#xa;OS:101080a0dc1533aff{4}%ST=0.286758%RT=0.289722)S4(P=600a81b60028063aXX{32&#xa;OS:}0016bc49dc41bb3efc581590a012ffff6a59000002040564010303090402080a0dc153&#xa;OS:44ff{4}%ST=0.386536%RT=0.390461)S5(P=600dfab60028063aXX{32}0016bc4ae93a&#xa;OS:6fc2fc581591a012ffffac1c000002040218010303090402080a0dc1534eff{4}%ST=0.&#xa;OS:486616%RT=0.490717)S6(P=6008567d0024063aXX{32}0016bc4bf6e2989ffc5815929&#xa;OS:012ffff8aaa0000020401090402080a0dc15358ff{4}%ST=0.586606%RT=0.595727)TE&#xa;OS:CN(P=600907f90020063aXX{32}0016bc4c10747e33fc5815938012fffffc4300000204&#xa;OS:05640103030904020000%ST=0.784365%RT=0.793461)T4(P=6000{4}14063aXX{32}00&#xa;OS:16bc4f3a7a07ac00{4}500400009a3e0000%ST=0.932364%RT=0.94051)T5(P=6000{4}&#xa;OS:14063aXX{32}01abbc5000{4}fc58159750140000c8ce0000%ST=0.981494%RT=0.9919&#xa;OS:3)T6(P=6000{4}14063aXX{32}01abbc51ef16ddde00{4}500400000dd80000%ST=1.03&#xa;OS:156%RT=1.03539)T7(P=6000{4}14063aXX{32}01abbc5200{4}fc58159850140000c8c&#xa;OS:b0000%ST=1.08074%RT=1.08482)EXTRA(FL=12345)&#xa;"/>
+</os>
+<times srtt="5207" rttvar="5004" to="50000"/>
+</host>
+<host starttime="1572177447" endtime="1572179410"><status state="up" reason="echo-reply" reason_ttl="58"/>
+<address addr="2402:f000:1:416:101:6:6:6" addrtype="ipv6"/>
+<hostnames>
+</hostnames>
+<ports><extraports state="closed" count="94">
+<extrareasons reason="resets" count="94"/>
+</extraports>
+<port protocol="tcp" portid="53"><state state="open" reason="syn-ack" reason_ttl="58"/><service name="domain" method="table" conf="3"/></port>
+<port protocol="tcp" portid="80"><state state="open" reason="syn-ack" reason_ttl="58"/><service name="http" method="table" conf="3"/></port>
+<port protocol="tcp" portid="443"><state state="open" reason="syn-ack" reason_ttl="58"/><service name="https" method="table" conf="3"/></port>
+<port protocol="tcp" portid="5060"><state state="filtered" reason="no-response" reason_ttl="0"/><service name="sip" method="table" conf="3"/></port>
+<port protocol="tcp" portid="8080"><state state="open" reason="syn-ack" reason_ttl="58"/><service name="http-proxy" method="table" conf="3"/></port>
+<port protocol="tcp" portid="8443"><state state="open" reason="syn-ack" reason_ttl="58"/><service name="https-alt" method="table" conf="3"/></port>
+</ports>
+<os><portused state="open" proto="tcp" portid="53"/>
+<portused state="closed" proto="tcp" portid="7"/>
+<portused state="closed" proto="udp" portid="31972"/>
+<osmatch name="Linux 3.13 - 4.6" accuracy="81" line="84">
+<osclass type="general purpose" vendor="Linux" osfamily="Linux" osgen="3.X" accuracy="81"><cpe>cpe:/o:linux:linux_kernel:3</cpe></osclass>
+<osclass type="general purpose" vendor="Linux" osfamily="Linux" osgen="4.X" accuracy="81"><cpe>cpe:/o:linux:linux_kernel:4</cpe></osclass>
+</osmatch>
+</os>
+<distance value="7"/>
+<times srtt="12434" rttvar="5685" to="50000"/>
+</host>
+<host starttime="1572177440" endtime="1572179410"><status state="up" reason="echo-reply" reason_ttl="58"/>
+<address addr="2402:f000:1:416:101:6:6:172" addrtype="ipv6"/>
+<hostnames>
+</hostnames>
+<ports><extraports state="closed" count="94">
+<extrareasons reason="resets" count="94"/>
+</extraports>
+<port protocol="tcp" portid="53"><state state="open" reason="syn-ack" reason_ttl="58"/><service name="domain" method="table" conf="3"/></port>
+<port protocol="tcp" portid="80"><state state="open" reason="syn-ack" reason_ttl="58"/><service name="http" method="table" conf="3"/></port>
+<port protocol="tcp" portid="443"><state state="open" reason="syn-ack" reason_ttl="58"/><service name="https" method="table" conf="3"/></port>
+<port protocol="tcp" portid="873"><state state="open" reason="syn-ack" reason_ttl="58"/><service name="rsync" method="table" conf="3"/></port>
+<port protocol="tcp" portid="5060"><state state="filtered" reason="no-response" reason_ttl="0"/><service name="sip" method="table" conf="3"/></port>
+<port protocol="tcp" portid="8443"><state state="open" reason="syn-ack" reason_ttl="58"/><service name="https-alt" method="table" conf="3"/></port>
+</ports>
+<os><portused state="open" proto="tcp" portid="53"/>
+<portused state="closed" proto="tcp" portid="7"/>
+<portused state="closed" proto="udp" portid="36069"/>
+<osmatch name="Linux 3.13 - 4.6" accuracy="91" line="84">
+<osclass type="general purpose" vendor="Linux" osfamily="Linux" osgen="3.X" accuracy="91"><cpe>cpe:/o:linux:linux_kernel:3</cpe></osclass>
+<osclass type="general purpose" vendor="Linux" osfamily="Linux" osgen="4.X" accuracy="91"><cpe>cpe:/o:linux:linux_kernel:4</cpe></osclass>
+</osmatch>
+</os>
+<distance value="7"/>
+<times srtt="10271" rttvar="3953" to="50000"/>
+</host>
+<host starttime="1572177440" endtime="1572179410"><status state="up" reason="echo-reply" reason_ttl="58"/>
+<address addr="2402:f000:1:416:101:6:6:173" addrtype="ipv6"/>
+<hostnames>
+</hostnames>
+<ports><extraports state="closed" count="94">
+<extrareasons reason="resets" count="94"/>
+</extraports>
+<port protocol="tcp" portid="22"><state state="open" reason="syn-ack" reason_ttl="58"/><service name="ssh" method="table" conf="3"/></port>
+<port protocol="tcp" portid="53"><state state="open" reason="syn-ack" reason_ttl="58"/><service name="domain" method="table" conf="3"/></port>
+<port protocol="tcp" portid="80"><state state="open" reason="syn-ack" reason_ttl="58"/><service name="http" method="table" conf="3"/></port>
+<port protocol="tcp" portid="873"><state state="open" reason="syn-ack" reason_ttl="58"/><service name="rsync" method="table" conf="3"/></port>
+<port protocol="tcp" portid="5060"><state state="filtered" reason="no-response" reason_ttl="0"/><service name="sip" method="table" conf="3"/></port>
+<port protocol="tcp" portid="6000"><state state="open" reason="syn-ack" reason_ttl="58"/><service name="X11" method="table" conf="3"/></port>
+</ports>
+<os><portused state="open" proto="tcp" portid="22"/>
+<portused state="closed" proto="tcp" portid="7"/>
+<portused state="closed" proto="udp" portid="41412"/>
+<osmatch name="Linux 3.13 - 4.6" accuracy="90" line="84">
+<osclass type="general purpose" vendor="Linux" osfamily="Linux" osgen="3.X" accuracy="90"><cpe>cpe:/o:linux:linux_kernel:3</cpe></osclass>
+<osclass type="general purpose" vendor="Linux" osfamily="Linux" osgen="4.X" accuracy="90"><cpe>cpe:/o:linux:linux_kernel:4</cpe></osclass>
+</osmatch>
+</os>
+<distance value="7"/>
+<times srtt="9184" rttvar="2871" to="50000"/>
+</host>
+<host starttime="1572177436" endtime="1572179410"><status state="up" reason="echo-reply" reason_ttl="58"/>
+<address addr="2402:f000:1:416:101:6:6:191" addrtype="ipv6"/>
+<hostnames>
+</hostnames>
+<ports><extraports state="closed" count="94">
+<extrareasons reason="resets" count="94"/>
+</extraports>
+<port protocol="tcp" portid="53"><state state="open" reason="syn-ack" reason_ttl="58"/><service name="domain" method="table" conf="3"/></port>
+<port protocol="tcp" portid="80"><state state="open" reason="syn-ack" reason_ttl="58"/><service name="http" method="table" conf="3"/></port>
+<port protocol="tcp" portid="443"><state state="open" reason="syn-ack" reason_ttl="58"/><service name="https" method="table" conf="3"/></port>
+<port protocol="tcp" portid="5060"><state state="filtered" reason="no-response" reason_ttl="0"/><service name="sip" method="table" conf="3"/></port>
+<port protocol="tcp" portid="8080"><state state="open" reason="syn-ack" reason_ttl="58"/><service name="http-proxy" method="table" conf="3"/></port>
+<port protocol="tcp" portid="8443"><state state="open" reason="syn-ack" reason_ttl="58"/><service name="https-alt" method="table" conf="3"/></port>
+</ports>
+<os><portused state="open" proto="tcp" portid="53"/>
+<portused state="closed" proto="tcp" portid="7"/>
+<portused state="closed" proto="udp" portid="37055"/>
+<osmatch name="Linux 3.13 - 4.6" accuracy="80" line="84">
+<osclass type="general purpose" vendor="Linux" osfamily="Linux" osgen="3.X" accuracy="80"><cpe>cpe:/o:linux:linux_kernel:3</cpe></osclass>
+<osclass type="general purpose" vendor="Linux" osfamily="Linux" osgen="4.X" accuracy="80"><cpe>cpe:/o:linux:linux_kernel:4</cpe></osclass>
+</osmatch>
+</os>
+<distance value="7"/>
+<times srtt="10364" rttvar="3952" to="50000"/>
+</host>
+<host starttime="1572177440" endtime="1572179409"><status state="up" reason="echo-reply" reason_ttl="58"/>
+<address addr="2402:f000:1:416:101:6:6:219" addrtype="ipv6"/>
+<hostnames>
+</hostnames>
+<ports><extraports state="filtered" count="98">
+<extrareasons reason="no-responses" count="98"/>
+</extraports>
+<port protocol="tcp" portid="80"><state state="open" reason="syn-ack" reason_ttl="58"/><service name="http" method="table" conf="3"/></port>
+<port protocol="tcp" portid="443"><state state="open" reason="syn-ack" reason_ttl="58"/><service name="https" method="table" conf="3"/></port>
+</ports>
+<os><portused state="open" proto="tcp" portid="80"/>
+<osfingerprint fingerprint="OS:SCAN(V=7.80%E=6%D=10/27%OT=80%CT=%CU=%PV=N%G=Y%TM=5DB58DDF%P=x86_64-pc-&#xa;OS:linux-gnu)S1(P=6000{4}28063aXX{32}0050bbfb8000997465b7dd33a01239086abd0&#xa;OS:00002040564010303020402080a1de756bbff{4}%ST=1.0043%RT=1.00781)S2(P=6000&#xa;OS:{4}24063aXX{32}0050bbfc6c7d634465b7dd3490123908c85e0000020405640402080a&#xa;OS:1de756d4ff{4}%ST=1.10442%RT=1.1069)S3(P=6000{4}28063aXX{32}0050bbfdf819&#xa;OS:223065b7dd35a01239086cb3000002040564010303020101080a1de756edff{4}%ST=1.&#xa;OS:20432%RT=1.20755)S4(P=6000{4}24063aXX{32}0050bbfe9867177165b7dd36901239&#xa;OS:08eb740000010303020402080a1de75706ff{4}%ST=1.30438%RT=1.30706)S5(P=6000&#xa;OS:{4}28063aXX{32}0050bbff894ce87065b7dd37a0123908120900000204056401030302&#xa;OS:0402080a1de7571fff{4}%ST=1.40435%RT=1.40783)S6(P=6000{4}24063aXX{32}005&#xa;OS:0bc007d0bd74065b7dd389012390843680000020405640402080a1de75738ff{4}%ST=1&#xa;OS:.50432%RT=1.50836)TECN(P=6000{4}20063aXX{32}0050bc018e3ef67465b7dd39801&#xa;OS:23908a330f7f5020405640103030201010402%ST=1.92592%RT=1.92846)EXTRA(FL=12&#xa;OS:345)&#xa;"/>
+</os>
+<times srtt="7209" rttvar="5265" to="50000"/>
+</host>
+<host starttime="1572177716" endtime="1572179410"><status state="up" reason="echo-reply" reason_ttl="58"/>
+<address addr="2402:f000:1:404:166:111:4:20" addrtype="ipv6"/>
+<hostnames>
+</hostnames>
+<ports><extraports state="closed" count="98">
+<extrareasons reason="resets" count="98"/>
+</extraports>
+<port protocol="tcp" portid="53"><state state="open" reason="syn-ack" reason_ttl="58"/><service name="domain" method="table" conf="3"/></port>
+<port protocol="tcp" portid="5060"><state state="filtered" reason="no-response" reason_ttl="0"/><service name="sip" method="table" conf="3"/></port>
+</ports>
+<os><portused state="open" proto="tcp" portid="53"/>
+<portused state="closed" proto="tcp" portid="7"/>
+<portused state="closed" proto="udp" portid="32253"/>
+<osmatch name="Linux 3.7 - 3.9" accuracy="92" line="57">
+<osclass type="general purpose" vendor="Linux" osfamily="Linux" osgen="3.X" accuracy="92"><cpe>cpe:/o:linux:linux_kernel:3</cpe></osclass>
+</osmatch>
+</os>
+<distance value="7"/>
+<times srtt="12837" rttvar="5165" to="50000"/>
+</host>
+<host starttime="1572177716" endtime="1572179409"><status state="up" reason="echo-reply" reason_ttl="58"/>
+<address addr="2402:f000:1:404:166:111:4:100" addrtype="ipv6"/>
+<hostnames>
+</hostnames>
+<ports><extraports state="filtered" count="98">
+<extrareasons reason="no-responses" count="98"/>
+</extraports>
+<port protocol="tcp" portid="80"><state state="open" reason="syn-ack" reason_ttl="58"/><service name="http" method="table" conf="3"/></port>
+<port protocol="tcp" portid="443"><state state="open" reason="syn-ack" reason_ttl="57"/><service name="https" method="table" conf="3"/></port>
+</ports>
+<os><portused state="open" proto="tcp" portid="80"/>
+<osfingerprint fingerprint="OS:SCAN(V=7.80%E=6%D=10/27%OT=80%CT=%CU=%PV=N%G=Y%TM=5DB58DDF%P=x86_64-pc-&#xa;OS:linux-gnu)S1(P=6000{4}28063aXX{32}0050bbe1de3b5574deb4d7a1a01237c8f82d0&#xa;OS:00002040564010303020402080a1de53cbdff{4}%ST=4.538%RT=4.54565)S2(P=6000{&#xa;OS:4}24063aXX{32}0050bbe2fab64844deb4d7a2901237c8fccf0000020405640402080a1&#xa;OS:de53cd7ff{4}%ST=4.63803%RT=4.64422)S3(P=6000{4}28063aXX{32}0050bbe3e4ea&#xa;OS:3f30deb4d7a3a01237c80a8e000002040564010303020101080a1de53cefff{4}%ST=4.&#xa;OS:73823%RT=4.74226)S4(P=6000{4}24063aXX{32}0050bbe4ba8a9971deb4d7a4901237&#xa;OS:c8eef40000010303020402080a1de53d10ff{4}%ST=4.83807%RT=4.87221)S5(P=6000&#xa;OS:{4}28063aXX{32}0050bbe51b4ca970deb4d7a5a01237c866b100000204056401030302&#xa;OS:0402080a1de53d25ff{4}%ST=4.93803%RT=4.95849)S6(P=6000{4}24063aXX{32}005&#xa;OS:0bbe6b388bd40deb4d7a6901237c8ce940000020405640402080a1de53d3cff{4}%ST=5&#xa;OS:.03808%RT=5.04733)TECN(P=6000{4}20063aXX{32}0050bbe701c87874deb4d7a7801&#xa;OS:237c83b53f7f5020405640103030201010402%ST=5.19526%RT=5.19984)EXTRA(FL=12&#xa;OS:345)&#xa;"/>
+</os>
+<times srtt="11496" rttvar="11625" to="57996"/>
+</host>
+<host starttime="1572177716" endtime="1572179410"><status state="up" reason="echo-reply" reason_ttl="58"/>
+<address addr="2402:f000:1:404:166:111:4:151" addrtype="ipv6"/>
+<hostnames>
+</hostnames>
+<ports><extraports state="closed" count="98">
+<extrareasons reason="resets" count="98"/>
+</extraports>
+<port protocol="tcp" portid="80"><state state="open" reason="syn-ack" reason_ttl="58"/><service name="http" method="table" conf="3"/></port>
+<port protocol="tcp" portid="5060"><state state="filtered" reason="no-response" reason_ttl="0"/><service name="sip" method="table" conf="3"/></port>
+</ports>
+<os><portused state="open" proto="tcp" portid="80"/>
+<portused state="closed" proto="tcp" portid="7"/>
+<portused state="closed" proto="udp" portid="39399"/>
+<osmatch name="Linux 3.7 - 3.9" accuracy="93" line="57">
+<osclass type="general purpose" vendor="Linux" osfamily="Linux" osgen="3.X" accuracy="93"><cpe>cpe:/o:linux:linux_kernel:3</cpe></osclass>
+</osmatch>
+</os>
+<distance value="7"/>
+<times srtt="10591" rttvar="3893" to="50000"/>
+</host>
+<host starttime="1572177716" endtime="1572179410"><status state="up" reason="echo-reply" reason_ttl="58"/>
+<address addr="2402:f000:1:405:166:111:5:98" addrtype="ipv6"/>
+<hostnames>
+</hostnames>
+<ports><extraports state="closed" count="95">
+<extrareasons reason="resets" count="95"/>
+</extraports>
+<port protocol="tcp" portid="21"><state state="open" reason="syn-ack" reason_ttl="58"/><service name="ftp" method="table" conf="3"/></port>
+<port protocol="tcp" portid="80"><state state="open" reason="syn-ack" reason_ttl="58"/><service name="http" method="table" conf="3"/></port>
+<port protocol="tcp" portid="443"><state state="open" reason="syn-ack" reason_ttl="58"/><service name="https" method="table" conf="3"/></port>
+<port protocol="tcp" portid="5060"><state state="filtered" reason="no-response" reason_ttl="0"/><service name="sip" method="table" conf="3"/></port>
+<port protocol="tcp" portid="8080"><state state="open" reason="syn-ack" reason_ttl="58"/><service name="http-proxy" method="table" conf="3"/></port>
+</ports>
+<os><portused state="open" proto="tcp" portid="21"/>
+<portused state="closed" proto="tcp" portid="7"/>
+<portused state="closed" proto="udp" portid="40495"/>
+<osfingerprint fingerprint="OS:SCAN(V=7.80%E=6%D=10/27%OT=21%CT=7%CU=40495%PV=N%DS=7%DC=I%G=Y%TM=5DB58&#xa;OS:DDF%P=x86_64-pc-linux-gnu)S1(P=6000{4}28063aXX{32}0015bc7200edde1c26101&#xa;OS:72ea0126f908bdf0000020405640101080a32b12d42ff{4}01030307%ST=4.87833%RT=&#xa;OS:4.88361)S2(P=6000{4}28063aXX{32}0015bc730336bf352610172fa0126f90a818000&#xa;OS:0020405640101080a32b12da5ff{4}01030307%ST=4.97839%RT=4.99015)S3(P=6000{&#xa;OS:4}28063aXX{32}0015bc7404715f4c26101730a0126f90063c0000020405640101080a3&#xa;OS:2b12e2eff{4}01030307%ST=5.07839%RT=5.12061)S4(P=6000{4}28063aXX{32}0015&#xa;OS:bc754752cbfd26101731a0126f9056690000020405640101080a32b12e6cff{4}010303&#xa;OS:07%ST=5.17834%RT=5.19192)S5(P=6000{4}28063aXX{32}0015bc765482b306261017&#xa;OS:32a0126f9061ca0000020405640101080a32b12ed0ff{4}01030307%ST=5.27837%RT=5&#xa;OS:.28113)S6(P=6000{4}24063aXX{32}0015bc77d04580902610173390126f902c200000&#xa;OS:020405640101080a32b12f39ff{4}%ST=5.37861%RT=5.38535)U1(P=6000{3}01643a3&#xa;OS:aXX{32}010451fa00{4}600123450134111fXX{32}bc569e2f0134228843{300}%ST=5.&#xa;OS:49272%RT=5.51893)TECN(P=6000{4}1c063aXX{32}0015bc785054224b261017347052&#xa;OS:7080901800000204056401030307%ST=5.54249%RT=5.55745)T4(P=6000{4}14063aXX&#xa;OS:{32}0015bc7b54f532c200{4}50040000548a0000%ST=5.6908%RT=5.71068)T5(P=600&#xa;OS:0{4}14063aXX{32}0007bc7c00{4}26101738501400009ef60000%ST=5.74008%RT=5.7&#xa;OS:4302)T6(P=6000{4}14063aXX{32}0007bc7d109d0fd900{4}50040000bbd70000%ST=5&#xa;OS:.78927%RT=5.79365)T7(P=6000{4}14063aXX{32}0007bc7e00{4}2610173a50140000&#xa;OS:9ef20000%ST=5.83891%RT=5.84508)EXTRA(FL=12345)&#xa;"/>
+</os>
+<distance value="7"/>
+<times srtt="11724" rttvar="4508" to="50000"/>
+</host>
+<host starttime="1572177716" endtime="1572179409"><status state="up" reason="echo-reply" reason_ttl="58"/>
+<address addr="2402:f000:1:405:166:111:5:99" addrtype="ipv6"/>
+<hostnames>
+</hostnames>
+<ports><extraports state="filtered" count="98">
+<extrareasons reason="no-responses" count="98"/>
+</extraports>
+<port protocol="tcp" portid="80"><state state="open" reason="syn-ack" reason_ttl="58"/><service name="http" method="table" conf="3"/></port>
+<port protocol="tcp" portid="443"><state state="open" reason="syn-ack" reason_ttl="58"/><service name="https" method="table" conf="3"/></port>
+</ports>
+<os><portused state="open" proto="tcp" portid="80"/>
+<osfingerprint fingerprint="OS:SCAN(V=7.80%E=6%D=10/27%OT=80%CT=%CU=%PV=N%G=Y%TM=5DB58DDF%P=x86_64-pc-&#xa;OS:linux-gnu)S1(P=6002e95b0028063aXX{32}0050bc72e79ce84ba59abe06a0126f9088&#xa;OS:ef0000020405640101080aeffd5b67ff{4}01030307%ST=4.95739%RT=4.96928)S2(P=&#xa;OS:60096e4a0028063aXX{32}0050bc737909372ea59abe07a0126f90a8400000020405640&#xa;OS:101080aeffd5bc5ff{4}01030307%ST=5.05727%RT=5.06319)S3(P=600e71120028063&#xa;OS:aXX{32}0050bc742ea714f7a59abe08a0126f9014710000020405640101080aeffd5c2c&#xa;OS:ff{4}01030307%ST=5.15725%RT=5.16763)S4(P=60052dfc0028063aXX{32}0050bc75&#xa;OS:2126857aa59abe09a0126f90b10b0000020405640101080aeffd5c8dff{4}01030307%S&#xa;OS:T=5.25725%RT=5.26657)S5(P=600e296c0028063aXX{32}0050bc7652bf9c49a59abe0&#xa;OS:aa0126f90683f0000020405640101080aeffd5cefff{4}01030307%ST=5.35728%RT=5.&#xa;OS:36126)S6(P=60004a5c0024063aXX{32}0050bc7704211906a59abe0b90126f904d9300&#xa;OS:00020405640101080aeffd5d89ff{4}%ST=5.45725%RT=5.51856)TECN(P=6009c9b900&#xa;OS:1c063aXX{32}0050bc785e5c757ba59abe0c70527080084100000204056401030307%ST&#xa;OS:=5.64145%RT=5.66152)T4(P=600973170014063aXX{32}0050bc7babb022fd00{4}500&#xa;OS:400000d580000%ST=5.8883%RT=5.89706)EXTRA(FL=12345)&#xa;"/>
+</os>
+<times srtt="17179" rttvar="13374" to="70675"/>
+</host>
+<host starttime="1572177716" endtime="1572179409"><status state="up" reason="echo-reply" reason_ttl="122"/>
+<address addr="2402:f000:1:405:166:111:5:134" addrtype="ipv6"/>
+<hostnames>
+</hostnames>
+<ports><extraports state="filtered" count="97">
+<extrareasons reason="no-responses" count="97"/>
+</extraports>
+<port protocol="tcp" portid="135"><state state="open" reason="syn-ack" reason_ttl="122"/><service name="msrpc" method="table" conf="3"/></port>
+<port protocol="tcp" portid="445"><state state="open" reason="syn-ack" reason_ttl="122"/><service name="microsoft-ds" method="table" conf="3"/></port>
+<port protocol="tcp" portid="5357"><state state="open" reason="syn-ack" reason_ttl="122"/><service name="wsdapi" method="table" conf="3"/></port>
+</ports>
+<os><portused state="open" proto="tcp" portid="135"/>
+<osfingerprint fingerprint="OS:SCAN(V=7.80%E=6%D=10/27%OT=135%CT=%CU=%PV=N%G=Y%TM=5DB58DDF%P=x86_64-pc&#xa;OS:-linux-gnu)S1(P=600016100020067aXX{32}0087bca44499cc546ddc8bcb8012ffff8&#xa;OS:fe40000020405640103030801010402%ST=5.08648%RT=5.12315)S2(P=600887bd0020&#xa;OS:067aXX{32}0087bca50d59e6fc6ddc8bcc8012ffffac7a0000020405640103030801010&#xa;OS:402%ST=5.18671%RT=5.19981)S3(P=60045ec6001c067aXX{32}0087bca69826ed116d&#xa;OS:dc8bcd7012ffff309d00000204056401030308%ST=5.28642%RT=5.29155)S4(P=600cc&#xa;OS:f6b0020067aXX{32}0087bca7ee7a57b46ddc8bce8012ffff5a9d000002040564010303&#xa;OS:0801010402%ST=5.38643%RT=5.39939)S5(P=600b204e0020067aXX{32}0087bca88ea&#xa;OS:21d956ddc8bcf8012fffff4920000020405640103030801010402%ST=5.48646%RT=5.5&#xa;OS:1859)S6(P=6003b1e3001c067aXX{32}0087bca9962eb59f6ddc8bd07012fc946c74000&#xa;OS:00204056401010402%ST=5.58643%RT=5.58949)TECN(P=602f68980020067aXX{32}00&#xa;OS:87bcaa65cd82526ddc8bd18052ffffb8660000020405640103030801010402%ST=5.938&#xa;OS:61%RT=5.94338)EXTRA(FL=12345)&#xa;"/>
+</os>
+<times srtt="15279" rttvar="13615" to="69739"/>
+</host>
+<host starttime="1572177716" endtime="1572179410"><status state="up" reason="echo-reply" reason_ttl="58"/>
+<address addr="2402:f000:1:405:166:111:5:136" addrtype="ipv6"/>
+<hostnames>
+</hostnames>
+<ports><extraports state="closed" count="98">
+<extrareasons reason="resets" count="98"/>
+</extraports>
+<port protocol="tcp" portid="5060"><state state="filtered" reason="no-response" reason_ttl="0"/><service name="sip" method="table" conf="3"/></port>
+<port protocol="tcp" portid="8443"><state state="open" reason="syn-ack" reason_ttl="58"/><service name="https-alt" method="table" conf="3"/></port>
+</ports>
+<os><portused state="open" proto="tcp" portid="8443"/>
+<portused state="closed" proto="tcp" portid="7"/>
+<portused state="closed" proto="udp" portid="36797"/>
+<osmatch name="Linux 3.13 - 4.6" accuracy="90" line="84">
+<osclass type="general purpose" vendor="Linux" osfamily="Linux" osgen="3.X" accuracy="90"><cpe>cpe:/o:linux:linux_kernel:3</cpe></osclass>
+<osclass type="general purpose" vendor="Linux" osfamily="Linux" osgen="4.X" accuracy="90"><cpe>cpe:/o:linux:linux_kernel:4</cpe></osclass>
+</osmatch>
+</os>
+<distance value="7"/>
+<times srtt="11471" rttvar="2594" to="50000"/>
+</host>
+<host starttime="1572177716" endtime="1572179409"><status state="up" reason="echo-reply" reason_ttl="58"/>
+<address addr="2402:f000:1:405:166:111:5:220" addrtype="ipv6"/>
+<hostnames>
+</hostnames>
+<ports><extraports state="filtered" count="98">
+<extrareasons reason="no-responses" count="98"/>
+</extraports>
+<port protocol="tcp" portid="80"><state state="open" reason="syn-ack" reason_ttl="58"/><service name="http" method="table" conf="3"/></port>
+<port protocol="tcp" portid="443"><state state="open" reason="syn-ack" reason_ttl="58"/><service name="https" method="table" conf="3"/></port>
+</ports>
+<os><portused state="open" proto="tcp" portid="80"/>
+<osfingerprint fingerprint="OS:SCAN(V=7.80%E=6%D=10/27%OT=80%CT=%CU=%PV=N%G=Y%TM=5DB58DDF%P=x86_64-pc-&#xa;OS:linux-gnu)S1(P=600128720020063aXX{32}0050bc51bfd2db8257be74db80127080c1&#xa;OS:a6000002040564010104020103030a%ST=8.62245%RT=8.62663)S2(P=600a455a00200&#xa;OS:63aXX{32}0050bc529dd0ef0457be74dc80127080d02400000204056401010402010303&#xa;OS:0a%ST=8.72249%RT=8.72622)S3(P=6006c996001c063aXX{32}0050bc53ddfbc4eb57b&#xa;OS:e74dd70127080cf170000020405640103030a%ST=8.82246%RT=8.82874)S4(P=600a32&#xa;OS:2f0020063aXX{32}0050bc54fef68a5f57be74de80127080d39f0000020405640101040&#xa;OS:20103030a%ST=8.92247%RT=8.96121)S5(P=600522d70020063aXX{32}0050bc55e4a6&#xa;OS:895957be74df80127080eef3000002040564010104020103030a%ST=9.02247%RT=9.03&#xa;OS:059)S6(P=60051328001c063aXX{32}0050bc560d1e39eb57be74e07012708029fa0000&#xa;OS:0204056401010402%ST=9.12248%RT=9.12579)TECN(P=600c298f0020063aXX{32}005&#xa;OS:0bc57c12422bd57be74e18052708078ce000002040564010104020103030a%ST=9.2988&#xa;OS:8%RT=9.32664)T4(P=600c99790014063aXX{32}0050bc5ab6d1ada500{4}5004000076&#xa;OS:280000%ST=9.44772%RT=9.4505)EXTRA(FL=12345)&#xa;"/>
+</os>
+<times srtt="11739" rttvar="10555" to="53959"/>
+</host>
+<host starttime="1572177716" endtime="1572179408"><status state="up" reason="echo-reply" reason_ttl="58"/>
+<address addr="2402:f000:1:405:166:111:5:245" addrtype="ipv6"/>
+<hostnames>
+</hostnames>
+<ports><extraports state="closed" count="92">
+<extrareasons reason="resets" count="92"/>
+</extraports>
+<port protocol="tcp" portid="22"><state state="open" reason="syn-ack" reason_ttl="58"/><service name="ssh" method="table" conf="3"/></port>
+<port protocol="tcp" portid="80"><state state="open" reason="syn-ack" reason_ttl="58"/><service name="http" method="table" conf="3"/></port>
+<port protocol="tcp" portid="111"><state state="open" reason="syn-ack" reason_ttl="58"/><service name="rpcbind" method="table" conf="3"/></port>
+<port protocol="tcp" portid="389"><state state="open" reason="syn-ack" reason_ttl="58"/><service name="ldap" method="table" conf="3"/></port>
+<port protocol="tcp" portid="2049"><state state="open" reason="syn-ack" reason_ttl="58"/><service name="nfs" method="table" conf="3"/></port>
+<port protocol="tcp" portid="5060"><state state="filtered" reason="no-response" reason_ttl="0"/><service name="sip" method="table" conf="3"/></port>
+<port protocol="tcp" portid="8080"><state state="open" reason="syn-ack" reason_ttl="58"/><service name="http-proxy" method="table" conf="3"/></port>
+<port protocol="tcp" portid="9999"><state state="open" reason="syn-ack" reason_ttl="58"/><service name="abyss" method="table" conf="3"/></port>
+</ports>
+<os><portused state="open" proto="tcp" portid="22"/>
+<portused state="closed" proto="tcp" portid="7"/>
+<portused state="closed" proto="udp" portid="36152"/>
+<osmatch name="Linux 3.7 - 3.9" accuracy="92" line="57">
+<osclass type="general purpose" vendor="Linux" osfamily="Linux" osgen="3.X" accuracy="92"><cpe>cpe:/o:linux:linux_kernel:3</cpe></osclass>
+</osmatch>
+<osfingerprint fingerprint="OS:SCAN(V=7.80%E=6%D=10/27%OT=22%CT=7%CU=36152%PV=N%DS=7%DC=I%G=Y%TM=5DB58&#xa;OS:DDF%P=x86_64-pc-linux-gnu)S1(P=6000{4}28063aXX{32}0016bc14486607ea26d3f&#xa;OS:032a01237c8493a0000020405640402080a174c73b5ff{4}01030307%ST=8.77848%RT=&#xa;OS:8.78193)S2(P=6000{4}28063aXX{32}0016bc15401eff1226d3f033a01237c85a3e000&#xa;OS:0020405640402080a174c73ceff{4}01030307%ST=8.87846%RT=8.88113)S3(P=6000{&#xa;OS:4}28063aXX{32}0016bc16b509202226d3f034a01237c8c7290000020405640101080a1&#xa;OS:74c73e7ff{4}01030307%ST=8.97869%RT=8.98135)S4(P=6000{4}28063aXX{32}0016&#xa;OS:bc17f4afd48a26d3f035a01237c8cffe0000020405640402080a174c7400ff{4}010303&#xa;OS:07%ST=9.07846%RT=9.08319)S5(P=6000{4}28063aXX{32}0016bc181d8499fe26d3f0&#xa;OS:36a01237c8e19a0000020405640402080a174c741aff{4}01030307%ST=9.17849%RT=9&#xa;OS:.18715)S6(P=6000{4}24063aXX{32}0016bc191c13190a26d3f037901237c877f20000&#xa;OS:020405640402080a174c7434ff{4}%ST=9.27843%RT=9.29746)U1(P=6000{3}01643a3&#xa;OS:aXX{32}0104504700{4}6001234501341125XX{32}bc848d38013431a443{300}%ST=9.&#xa;OS:39846%RT=9.40432)TECN(P=6000{4}20063aXX{32}0016bc1ae3c11b2626d3f0388052&#xa;OS:38404bf10000020405640101040201030307%ST=9.44773%RT=9.45075)T4(P=6000{4}&#xa;OS:14063aXX{32}0016bc1d493471ee00{4}500400001fcf0000%ST=9.59559%RT=9.59921&#xa;OS:)T5(P=6000{4}14063aXX{32}0007bc1e00{4}26d3f03c50140000c3df0000%ST=9.645&#xa;OS:41%RT=9.6478)T6(P=6000{4}14063aXX{32}0007bc1f8f5da17800{4}50040000aa280&#xa;OS:000%ST=9.69533%RT=9.69921)T7(P=6000{4}14063aXX{32}0007bc2000{4}26d3f03e&#xa;OS:50140000c3db0000%ST=9.74547%RT=9.8061)EXTRA(FL=12345)&#xa;"/>
+</os>
+<distance value="7"/>
+<times srtt="31514" rttvar="81" to="50000"/>
+</host>
+<runstats><finished time="1572179423" timestr="Sun Oct 27 12:30:23 2019" elapsed="3930.61" summary="Nmap done at Sun Oct 27 12:30:23 2019; 81800 IP addresses (15 hosts up) scanned in 3930.61 seconds" exit="success"/><hosts up="15" down="81785" total="81800"/>
+</runstats>
+</nmaprun>
